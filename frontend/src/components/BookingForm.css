@@ -1,0 +1,38 @@
+input {
+  height: 40px;
+  width: 300px;
+  font-size: 1.2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 5px;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px gray solid;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.error {
+  border-bottom: 1px orangered solid;
+  animation: shake 0.1s alternate 5;
+}
+
+.success {
+  border-bottom: 1px limegreen solid;
+}
+
+@keyframes shake {
+  from {
+    transform: translateX(-5px);
+  }
+  to {
+    transform: translateX(5px);
+  }
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
